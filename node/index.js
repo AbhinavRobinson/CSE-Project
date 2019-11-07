@@ -1,0 +1,11 @@
+const express = require('express')
+const cors = require('cors')
+const app = express()
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+app.use(cors)
+app.post('/', (req, res) => {
+    console.log(req.body)
+    res.send()
+})
+app.listen(8080, () => console.log(''))
