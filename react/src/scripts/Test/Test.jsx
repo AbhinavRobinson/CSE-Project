@@ -3,6 +3,8 @@ import '../../styles/Test/Test.scss'
 import img1 from '../../assets/1.svg'
 import bsCustomFileInput from 'bs-custom-file-input'
 
+// import axios from 'axios'
+
 class Test extends Component {
 	constructor(props) {
 		super(props)
@@ -21,7 +23,7 @@ class Test extends Component {
 		l.push(path_out + 'colour/' + fileName)
 		this.setState({ l:l })
     
-    let data = await axios.get('http://localhost:8080')
+    // let data = await axios.get('http://localhost:8080')
     
     console.log(l)
   }
