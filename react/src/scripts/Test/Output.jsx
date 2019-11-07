@@ -13,6 +13,10 @@ class Output extends Component {
       <React.Fragment>
         <div className="container">
           <div className="div1 z-depth-3">
+            <span className="heading">
+              Output
+            </span>
+            <br/>
            <img className="imageOutput" src={img1} alt=""/>
            <img className="imageOutput" src={img1} alt=""/>
            <img className="imageOutput" src={img1} alt=""/>

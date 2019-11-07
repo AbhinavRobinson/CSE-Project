@@ -3,7 +3,9 @@ import React, { Component } from "react";
 import Nav from "./Nav"
 // import Upper from "./Upper";
 // import Employee from "./login/Employee";
-import Test from "./Test/Test";
+// import Test from "./Test/Test";
+import Output from "./Test/Output";
+
 
 class App extends Component {
   render() {
@@ -12,7 +14,8 @@ class App extends Component {
         <Nav/>
         {/* <Upper /> */}
         {/* <Employee /> */}
-        <Test />
+        {/* <Test /> */}
+        <Output />
       </div>
     );
   }
