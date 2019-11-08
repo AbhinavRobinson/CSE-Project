@@ -15,13 +15,15 @@ class Test extends Component {
 		let fileInput = document.getElementById('inputGroupFile01')
 		let fileName = fileInput.files[0].name
 		let path_out = 'http://localhost:5000/'
+		// this.setState({})
 		let l = Array.from(this.state.l)
-		l.push(path_out + '2/' + fileName)
 		l.push(path_out + '1/' + fileName)
+		l.push(path_out + '2/' + fileName)
 		l.push(path_out + '3/' + fileName)
 		l.push(path_out + '4/' + fileName)
-		l.push(path_out + 'colour/' + fileName)
 		// let data = await axios.get('http://localhost:8080')
+		// l.push(path_out + 'colour/' + fileName)
+		
 		this.setState({ l: l })
 
 		console.log(l)
@@ -87,7 +89,7 @@ class Test extends Component {
 					<img className="imag" src={this.state.l[1]} alt="" /><br/>
 					<img className="imag" src={this.state.l[2]} alt="" /><br/>
 					<img className="imag" src={this.state.l[3]} alt="" /><br/>
-					<img className="imag" src={this.state.l[4]} alt="" />
+					{/* <img className="imag" src={this.state.l[4]} alt="" /> */}
 				</div>
 			</React.Fragment>
 		)
