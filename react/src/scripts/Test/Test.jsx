@@ -14,20 +14,19 @@ class Test extends Component {
 	async handleClick() {
 		let fileInput = document.getElementById('inputGroupFile01')
 		let fileName = fileInput.files[0].name
-		let path_out = 'F:/data/'
+		let path_out = 'http://localhost:5000/'
 		let l = Array.from(this.state.l)
 		l.push(path_out + '2/' + fileName)
 		l.push(path_out + '1/' + fileName)
 		l.push(path_out + '3/' + fileName)
 		l.push(path_out + '4/' + fileName)
 		l.push(path_out + 'colour/' + fileName)
-		this.setState({ l:l })
-    
-    // let data = await axios.get('http://localhost:8080')
-    
-    console.log(l)
-  }
-  
+		// let data = await axios.get('http://localhost:8080')
+		this.setState({ l: l })
+
+		console.log(l)
+	}
+
 	componentDidMount() {
 		bsCustomFileInput.init()
 	}
@@ -82,6 +81,13 @@ class Test extends Component {
 							</div>
 						</div>
 					</div>
+				</div>
+				<div className="k">
+					<img className="imag" src={this.state.l[0]} alt="" /><br/>
+					<img className="imag" src={this.state.l[1]} alt="" /><br/>
+					<img className="imag" src={this.state.l[2]} alt="" /><br/>
+					<img className="imag" src={this.state.l[3]} alt="" /><br/>
+					<img className="imag" src={this.state.l[4]} alt="" />
 				</div>
 			</React.Fragment>
 		)
