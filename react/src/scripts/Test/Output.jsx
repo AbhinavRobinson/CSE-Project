@@ -12,7 +12,7 @@ class Output extends Component {
     return (
       <React.Fragment>
         <div className="container">
-          <div className="div1 z-depth-3">
+          <div className="div10 z-depth-3">
             <span className="heading">
               Output
             </span>
